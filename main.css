@@ -1,0 +1,231 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+
+body{
+    background-color:#cccccc;
+}
+.contents{
+    height: auto;
+    width: 100%;
+}
+
+.header{
+    background-color: #273746;
+    height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+line-height: 50px;
+    }
+
+    .header h1{
+        color: #fafafa;
+        font-size: 60px;
+    }
+
+    .header h3{
+        color: #fafafa;
+        font-size: 30px;
+    }
+
+    .overlap-pic{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .overlap-pic .pic{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: #fafafa;
+        border: 3px solid #fafafa;
+        top: -70px;
+    }
+    .pic img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .my-info{
+width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+
+padding: 30px 30px;
+    }
+
+    .my-info p i{
+        color: #273746;
+        font-size: 20px;
+    }
+
+    .add-num{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 50%;
+        flex-direction: column;
+        line-height: 30px;
+    }
+
+    .fb-email{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 50%;
+       
+        line-height: 30px;
+    }
+
+    .my-fave-sub{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 100px;
+
+    }
+
+    .my-fave-sub > div{
+        height: 250px;
+        width: 200px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        position: relative;
+        text-align: center;
+    }
+
+    .first i ,.second i,.third i{
+        font-size: 40px;
+        color: #273746;
+    }
+    .first::after{
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 500px;
+        background:linear-gradient(
+            #77a1d3
+            ,
+            #79cbca
+            ,
+            #e684ae);
+        z-index: -1;
+        border-radius: 50%;
+        top: -100px;
+        left: -50px;
+    }
+    .second::after{
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 500px;
+        background:linear-gradient(   
+#314755
+,
+#26a0da);
+        z-index: -1;
+        border-radius: 50%;
+        top: -100px;
+        left: -50px;
+    }
+    .third::after{
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 500px;
+        background:linear-gradient(
+          
+#cc2b5e
+,
+#753a88);
+        z-index: -1;
+        border-radius: 50%;
+        top: -100px;
+        left: -50px;
+    }
+
+    .one{
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background-color: #273746;
+        color: #fafafa;
+    }
+
+    @media all and (max-width: 600px) {
+
+        .header h1{
+            font-size: 30px;
+        }
+
+        .header h3{
+            font-size: 20px;
+        }
+
+        .my-fave-sub{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 100px;
+            flex-direction: column;
+            
+        }
+
+        .my-fave-sub > div{
+            margin-top: 10px;
+        }
+
+        .my-info{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 30px;
+            margin-top: 50px;
+                }
+
+                .add-num{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                    width: 100%;
+                    flex-direction: column;
+                    line-height: 30px;
+                }
+            
+                .fb-email{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    width:100%;
+                   
+                    line-height: 30px;
+                }
+    }
